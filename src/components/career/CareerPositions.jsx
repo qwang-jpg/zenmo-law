@@ -41,7 +41,7 @@ export default function CareerPositions() {
             transition={{ delay: 0.1 }}
             className="section-body"
           >
-            Equal Employment Opportunity Statement: Zenmo Law is an equal opportunity employer. We do not discriminate against any candidate on the basis of race, gender, national origin, religion, marital status, or any other characteristic protected by applicable law. We are committed to fostering an inclusive, respectful, and professional work environment for all.
+            Equal Employment Opportunity Statement: Zenmo Law is an equal opportunity employer. We do not discriminate against any candidate on the basis of race, gender, national origin, religion, marital status, or any other characteristic protected by applicable law. We are committed to fostering an inclusive, respectful, and professional work environment for all. please send your resume to hr@zenmolaw.com
           </motion.p>
         </div>
       </section>

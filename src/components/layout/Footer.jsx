@@ -22,7 +22,7 @@ export default function Footer() {
             <img
               src={assetUrl("/images/logos/Website-logo.png")}
               alt="Zenmo Law"
-              className="h-8.5 w-auto max-w-[220px] brightness-0 invert opacity-85"
+              className="h-13 w-auto max-w-[220px] brightness-0 invert opacity-85"
             />
             <p className="text-xs text-zenmo-footer-text/70 leading-relaxed max-w-[240px]">
               New York–based immigration & business law firm serving an international clientele.

@@ -26,7 +26,7 @@ export default function CTASection({
           </p>
           <Link
             to={buttonLink}
-            className="inline-flex items-center gap-2 md:gap-3 bg-white text-zenmo-primary hover:bg-white/90 px-6 py-3 md:px-8 md:py-4 rounded-[10px] font-semibold transition-all duration-300 hover:shadow-lg group text-sm md:text-base"
+            className="inline-flex items-center gap-2 md:gap-3 bg-white text-zenmo-btn1 hover:bg-white/90 px-6 py-3 md:px-8 md:py-4 rounded-[10px] font-semibold transition-all duration-300 hover:shadow-lg group text-sm md:text-base"
           >
             {buttonText}
             <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />

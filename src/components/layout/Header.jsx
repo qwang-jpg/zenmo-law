@@ -11,11 +11,11 @@ const topBarItems = [
 ]
 
 const navItems = [
-  { label: 'About Us', path: '/about-us' },
+  { label: 'About Us',        path: '/about-us' },
   { label: 'Immigration Law', path: '/immigration-law' },
-  { label: 'Business Law', path: '/business-law' },
-  { label: 'Individual Law', path: '/individual-law' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Business Law',    path: '/business-law' },
+  { label: 'Individual Law',  path: '/individual-law' },
+  { label: 'Contact',         path: '/contact' },
 ]
 
 function TopBarIcon({ type }) {
@@ -69,7 +69,7 @@ export default function Header() {
             {topBarItems.map((item, index) => (
               <div key={index} className="flex items-center gap-2 text-zenmo-subheading">
                 <TopBarIcon type={item.icon} />
-                <span className="text-xs font-arial">{item.text}</span>
+                <span className="text-xs font-sans">{item.text}</span>
               </div>
             ))}
           </div>
@@ -80,7 +80,7 @@ export default function Header() {
             className="flex items-center gap-2 text-zenmo-subheading hover:text-white transition-colors"
           >
             <TopBarIcon type="language" />
-            <span className="text-xs font-arial">中文</span>
+            <span className="text-xs font-sans">中文</span>
           </a>
         </div>
       </div>
@@ -105,30 +105,20 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-[30px]">
             {navItems.map((item) => (
-              item.disabled ? (
-                <span
-                  key={item.path}
-                  className="text-base font-arial font-semibold capitalize text-zenmo-text cursor-default opacity-40"
-                  aria-disabled="true"
-                >
-                  {item.label}
-                </span>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`text-base font-arial font-semibold capitalize transition-colors duration-200 hover:text-zenmo-btn1 relative ${
-                    location.pathname === item.path || location.pathname.startsWith(item.path + '/')
-                      ? 'text-zenmo-btn1'
-                      : 'text-zenmo-text'
-                  }`}
-                >
-                  {item.label}
-                  {(location.pathname === item.path || location.pathname.startsWith(item.path + '/')) && (
-                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-zenmo-btn1 rounded-full" />
-                  )}
-                </Link>
-              )
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-base font-sans font-semibold capitalize transition-colors duration-200 hover:text-zenmo-btn1 relative ${
+                  location.pathname === item.path || location.pathname.startsWith(item.path + '/')
+                    ? 'text-zenmo-btn1'
+                    : 'text-zenmo-text'
+                }`}
+              >
+                {item.label}
+                {(location.pathname === item.path || location.pathname.startsWith(item.path + '/')) && (
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-zenmo-btn1 rounded-full" />
+                )}
+              </Link>
             ))}
 
             <Link
@@ -164,24 +154,15 @@ export default function Header() {
         >
           <nav className="flex flex-col py-2" aria-label="Mobile Navigation">
             {navItems.map((item) => (
-              item.disabled ? (
-                <span
-                  key={item.path}
-                  className="px-6 py-3.5 text-zenmo-secondary font-medium opacity-40 cursor-default"
-                >
-                  {item.label}
-                </span>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`px-6 py-3.5 text-zenmo-secondary font-medium transition-colors hover:bg-zenmo-light-bg ${
-                    location.pathname === item.path ? 'bg-zenmo-light-bg text-zenmo-btn1' : ''
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`px-6 py-3.5 text-zenmo-secondary font-medium transition-colors hover:bg-zenmo-light-bg ${
+                  location.pathname === item.path ? 'bg-zenmo-light-bg text-zenmo-btn1' : ''
+                }`}
+              >
+                {item.label}
+              </Link>
             ))}
 
             <div className="px-6 py-3">

@@ -39,10 +39,7 @@ export default function ContactInfo() {
                   transition={{ duration: 0.4, delay: index * 0.08 }}
                   className="flex items-center gap-4 bg-zenmo-light-bg rounded-xl px-5 py-4"
                 >
-                  <div
-                    className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ backgroundColor: '#EEF0FF', color: '#4F47E6' }}
-                  >
+                  <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 bg-zenmo-btn1/10 text-zenmo-btn1">
                     {item.icon}
                   </div>
                   <div>

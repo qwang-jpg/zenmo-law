@@ -72,7 +72,7 @@ export default function EmployerSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-sm md:text-base text-zenmo-subheading leading-relaxed max-w-6xl mb-10 md:mb-12"
         >
-          For companies without in-house immigration counsel, managing the immigration compliance of foreign national employees often falls to HR — creating risk of missed deadlines and compliance gaps. Zenmo Law can serve as your company's external immigration legal team, systematically managing the full employment lifecycle of your foreign national workforce so your HR team can focus on core people operations.
+          For companies without in-house immigration counsel, managing the immigration compliance of foreign national employees often falls to HR — creating risk of missed deadlines and compliance gaps. Zenmo Law can serve as your company's external immigration legal team, comprehensively managing the full employment lifecycle of your foreign national workforce so your HR team can focus on core people operations.
         </motion.p>
 
         {/* Two-column content */}

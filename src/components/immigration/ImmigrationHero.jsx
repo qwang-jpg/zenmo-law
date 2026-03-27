@@ -8,10 +8,7 @@ export default function ImmigrationHero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${assetUrl('/images/backgrounds/Immigration-background.jpg')})` }}
       />
-      <div
-        className="absolute inset-0"
-        style={{ background: 'linear-gradient(160deg, rgba(25,33,51,0.93) 0%, rgba(25,33,51,0.82) 100%)' }}
-      />
+      <div className="absolute inset-0 hero-img-overlay" />
       <div className="relative z-10 max-w-content mx-auto w-full px-5 md:px-8 lg:px-0 py-16 md:py-20">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -19,7 +16,7 @@ export default function ImmigrationHero() {
           transition={{ duration: 0.6 }}
           className="text-[26px] leading-[1.3] md:text-[36px] lg:text-[46px] lg:leading-[1.2] font-semibold text-white mb-5 w-full md:w-[80%] lg:w-[55%]"
         >
-          Systematic U.S. Immigration Legal Support at Every Stage
+          Comprehensive U.S. Immigration Legal Support at Every Stage
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 30 }}

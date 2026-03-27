@@ -8,10 +8,7 @@ export default function IndividualHero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${assetUrl('/images/backgrounds/Individual-background.jpg')})` }}
       />
-      <div
-        className="absolute inset-0"
-        style={{ background: 'linear-gradient(160deg, rgba(25,33,51,0.93) 0%, rgba(25,33,51,0.82) 100%)' }}
-      />
+      <div className="absolute inset-0 hero-img-overlay" />
       <div className="relative z-10 max-w-content mx-auto w-full px-5 md:px-8 lg:px-0 py-16 md:py-20">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -27,7 +24,7 @@ export default function IndividualHero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="text-sm md:text-base font-normal text-zenmo-subheading leading-relaxed w-full md:w-[80%] lg:w-[55%]"
         >
-          Whether you are studying, working, or living in the United States, you may encounter traffic violations, civil disputes, or personal injury claims. Zenmo Law provides systematic individual legal support, helping clients assess liability, identify procedural pathways, and advance their matters within a structured framework.
+          Whether you are studying, working, or living in the United States, you may encounter traffic violations, civil disputes, or personal injury claims. Zenmo Law provides reliable individual legal support, helping clients assess liability, identify procedural pathways, and advance their matters within a structured framework.
         </motion.p>
       </div>
     </section>

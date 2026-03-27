@@ -2,10 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function ContactHero() {
   return (
-    <section
-      className="py-14 md:py-20 flex items-center justify-center min-h-[240px] md:min-h-[300px]"
-      style={{ background: 'linear-gradient(325deg, #4E2995 0%, #121B2E 100%)' }}
-    >
+    <section className="contact-hero-gradient py-14 md:py-20 flex items-center justify-center min-h-[240px] md:min-h-[300px]">
       <div className="max-w-content mx-auto w-full px-5 md:px-8 lg:px-0 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

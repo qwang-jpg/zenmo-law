@@ -74,7 +74,7 @@ export default function HomePracticeAreas() {
               </div>
 
               <p className="text-sm text-zenmo-text leading-relaxed mb-6">
-                Our core practice. We provide comprehensive U.S. immigration strategy — from initial work visa applications to long-term green card planning — backed by hands-on experience across every stage of the immigration process.
+                As our core practice. We provide comprehensive U.S. immigration strategy — from initial work visa applications to long-term green card planning — backed by hands-on experience across every stage of the immigration process.
               </p>
 
               {/* Tags grid */}

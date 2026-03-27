@@ -160,9 +160,10 @@ export function useSEO({
     // ── No-index pages: robots + clean up SEO tags ─────────────
     if (noIndex) {
       setMeta('meta[name="robots"]', 'name', 'robots', 'noindex, nofollow')
-      // Remove canonical to avoid indexing signals
-      const canonical = document.querySelector('link[rel="canonical"]')
-      if (canonical) canonical.remove()
+      // 🔴 Fix: renamed from `canonical` to `canonicalEl` to avoid
+      //    shadowing the `canonical` parameter in the outer scope
+      const canonicalEl = document.querySelector('link[rel="canonical"]')
+      if (canonicalEl) canonicalEl.remove()
       return
     }
 

@@ -7,9 +7,7 @@ export default function NotFound() {
   useSEO({ noIndex: true })
 
   return (
-    <section className="min-h-[80vh] flex items-center justify-center px-5 py-20"
-      style={{ background: 'linear-gradient(160deg, #0D1629 0%, #192133 100%)' }}
-    >
+    <section className="hero-gradient min-h-[80vh] flex items-center justify-center px-5 py-20">
       <div className="text-center max-w-lg mx-auto">
 
         {/* Icon */}
@@ -19,10 +17,7 @@ export default function NotFound() {
           transition={{ duration: 0.5 }}
           className="flex justify-center mb-8"
         >
-          <div
-            className="w-20 h-20 rounded-2xl flex items-center justify-center"
-            style={{ backgroundColor: 'rgba(79,71,230,0.15)', color: '#4F47E6' }}
-          >
+          <div className="w-20 h-20 rounded-2xl flex items-center justify-center bg-zenmo-btn1/15 text-zenmo-btn1">
             <FileX size={36} strokeWidth={1.4} />
           </div>
         </motion.div>

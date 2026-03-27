@@ -64,6 +64,17 @@
     background: linear-gradient(160deg, #0D1629 0%, #192133 100%);
   }
 
+  /* Overlay for hero sections with background images */
+  /* Used by: AboutHero, BusinessHero, ImmigrationHero, IndividualHero */
+  .hero-img-overlay {
+    background: linear-gradient(160deg, rgba(25,33,51,0.93) 0%, rgba(25,33,51,0.82) 100%);
+  }
+
+  /* Contact page hero — distinct gradient */
+  .contact-hero-gradient {
+    background: linear-gradient(325deg, #4E2995 0%, #121B2E 100%);
+  }
+
   .why-zenmo-bg {
     background-color: #182234;
   }

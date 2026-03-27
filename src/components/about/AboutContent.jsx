@@ -4,24 +4,28 @@ import { Globe2, Scale, TrendingUp, Users } from 'lucide-react'
 const highlights = [
   {
     icon: <Globe2 size={18} strokeWidth={1.7} />,
+    bg: 'rgba(124,58,237,0.07)',
     color: '#7C3AED',
     label: 'Core Practice',
     value: 'U.S. Immigration Law',
   },
   {
     icon: <Scale size={18} strokeWidth={1.7} />,
+    bg: 'rgba(37,99,235,0.07)',
     color: '#2563EB',
     label: 'Standards',
     value: 'NY Rules of Professional Conduct',
   },
   {
     icon: <Users size={18} strokeWidth={1.7} />,
+    bg: 'rgba(8,145,178,0.07)',
     color: '#0891B2',
     label: 'Clients',
     value: 'Individuals & Businesses',
   },
   {
     icon: <TrendingUp size={18} strokeWidth={1.7} />,
+    bg: 'rgba(79,71,230,0.07)',
     color: '#4F47E6',
     label: 'Focus',
     value: 'Long-Term Legal Partnership',
@@ -41,14 +45,14 @@ export default function AboutContent() {
           transition={{ duration: 0.5 }}
           className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-14 md:mb-16"
         >
-          {highlights.map((h, i) => (
+          {highlights.map((h) => (
             <div
               key={h.label}
               className="flex items-center gap-3 px-4 py-4 rounded-xl border border-gray-100 bg-gray-50"
             >
               <div
                 className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: `${h.color}12`, color: h.color }}
+                style={{ backgroundColor: h.bg, color: h.color }}
               >
                 {h.icon}
               </div>
@@ -72,7 +76,7 @@ export default function AboutContent() {
             className="flex-1 mb-12 lg:mb-0"
           >
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-1 h-6 rounded-full flex-shrink-0" style={{ backgroundColor: '#4F47E6' }} />
+              <div className="w-1 h-6 rounded-full flex-shrink-0 bg-zenmo-btn1" />
               <h2 className="text-2xl md:text-3xl font-semibold text-zenmo-secondary">About Zenmo Law</h2>
             </div>
 
@@ -89,7 +93,7 @@ export default function AboutContent() {
             </div>
 
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-1 h-6 rounded-full flex-shrink-0" style={{ backgroundColor: '#7C3AED' }} />
+              <div className="w-1 h-6 rounded-full flex-shrink-0 bg-zenmo-btn2" />
               <h2 className="text-2xl md:text-3xl font-semibold text-zenmo-secondary">Our Mission</h2>
             </div>
 

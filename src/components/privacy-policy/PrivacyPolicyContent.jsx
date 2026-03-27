@@ -11,10 +11,10 @@ export default function PrivacyPolicyContent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto prose prose-gray prose-headings:text-zenmo-secondary prose-headings:font-semibold prose-p:text-zenmo-text prose-p:leading-relaxed prose-li:text-zenmo-text prose-li:leading-relaxed"
+            className="max-w-4xl mx-auto prose"
           >
             <h3>Introduction</h3>
-            <p>Global Focus Law Group PLLC, doing business as Zenmo Law (&ldquo;Zenmo Law,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), is a New York–based law firm committed to protecting the privacy and security of personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard information obtained through our website, <a href="https://www.zenmolaw.com" className="text-zenmo-btn1 hover:underline">https://www.zenmolaw.com</a>, and other related subdomain websites (the &ldquo;Site&rdquo;), and through related communications.</p>
+            <p>Global Focus Law Group PLLC, doing business as Zenmo Law (&ldquo;Zenmo Law,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), is a New York–based law firm committed to protecting the privacy and security of personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard information obtained through our website, <a href="https://www.zenmolaw.com">https://www.zenmolaw.com</a>, and other related subdomain websites (the &ldquo;Site&rdquo;), and through related communications.</p>
             <p>This Privacy Policy applies to visitors to our Site, individuals who contact us for inquiries or consultations, and clients who engage us for legal services. By accessing or using our Site, you acknowledge that you have read and understood this Privacy Policy.</p>
             <h3>No Attorney–Client Relationship Created by Website Use</h3>
             <p>Accessing this Site, submitting information through online forms, uploading documents, communicating with us via email, WeChat, WeCom, or other platforms, or electronically signing documents does not by itself create an attorney–client relationship.</p>
@@ -59,7 +59,7 @@ export default function PrivacyPolicyContent() {
             <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated &ldquo;Last Updated&rdquo; date. Continued use of the Site after changes are posted constitutes acceptance of the revised Privacy Policy.</p>
             <h3>Contact Information</h3>
             <p>If you have any questions regarding this Privacy Policy or our data practices, please contact us at:</p>
-            <p>Email: <a href="mailto:contact@zenmolaw.com" className="text-zenmo-btn1 hover:underline">contact@zenmolaw.com</a></p>
+            <p>Email: <a href="mailto:contact@zenmolaw.com">contact@zenmolaw.com</a></p>
           </motion.div>
         </div>
       </section>

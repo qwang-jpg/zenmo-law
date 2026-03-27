@@ -18,7 +18,7 @@ export default function CareerHero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="text-sm md:text-base text-zenmo-subheading max-w-xl mx-auto"
         >
-          Build your career at Zenmo Law — where professional growth meets meaningful work
+          Build a Career at the Intersection of Immigration Law and International Practice
         </motion.p>
       </div>
     </section>
